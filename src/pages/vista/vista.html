@@ -1,0 +1,59 @@
+<!--
+  Generated template for the VistaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar  color="dark">
+    <ion-title>{{ personaje.nombre }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <img style="border-radius:50%" [src]=" personaje.img "/>
+    <ion-card-content >
+      
+      <ion-card-title   style="text-align: center;" align-title="center">
+         {{ personaje.nombre }} 
+        </ion-card-title>
+       
+      <p style="text-align: center;">
+        {{ personaje.titulo }}
+      </p>
+      <button ion-button full color="danger" (click)="regresar()">Regresar</button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<ion-footer color="dark">
+  <ion-toolbar  color="dark">
+    <ion-buttons start>
+        <ion-icon name="call" style="font-size: 32px;
+        margin-left: 24px; color:white"></ion-icon>
+        <br>
+      <button ion-button color="save">
+        llamadas
+      </button>
+    </ion-buttons>
+    <ion-buttons start>
+        <ion-icon  style="font-size: 32px;
+        margin-left:  70px; color:white;" name="text"></ion-icon>
+        <br>
+      <button style="margin-left: 44px;" ion-button color="save">
+        Mensajes
+      </button>
+    </ion-buttons>
+    <ion-buttons end>
+        <ion-icon  style="font-size: 32px;
+        margin-right: 10px; color:white" name="musical-notes"></ion-icon>
+        <br>
+      <button ion-button color="save">
+        Audio
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
